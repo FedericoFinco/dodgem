@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main{
+    /* flex-grow: 1; */
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70%;
+}
+
+.error h3{
+    font-size: 35px;
+}
+
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 30%;
+}
+
+#mainGrid{
+    width: 100%;
+
+}
+
+header{
+    
+}
+
+footer{
+    
+}
+
+footer > .container{
+    background-color: rgb(72, 71, 5);
+    max-width: 1180px;
+    margin: 30px auto;
+}
+
+.containerHead{
+    max-width: 1180px;
+    margin: 30px auto;
+    background-color: rgb(5, 72, 72);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerHead img {
+    display: block;
+    margin-left: 2rem;
+}
+
+.containerHead button{
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+}
+
+#mainGrid{
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.result{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+
+.grid{
+    border: 1px solid white;
+    height: 70vh;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked{
+    background-color: rgb(0, 125, 125);
+}
+.bomba{
+    background-color: brown;
+}
+
+div.grid .square{
+    border: 1px solid white;
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+div.grid .square .arrowUp{
+    width: 100%;
+    z-index: 10;
+}
+
+div.grid .square .arrowUp:hover{
+    color: yellow;
+    transform: scale(2.5);
+    cursor: crosshair;
+}
+
+div.grid .square .car{
+    width: calc(100% / 3);
+}
+
+div.grid .square .arrowLeft{
+    width: calc(100% / 3);
+    z-index: 10;
+    
+}
+
+div.grid .square .arrowLeft:hover{
+    color: yellow;
+    transform: scale(2.5);
+    cursor: crosshair;
+}
+
+div.grid .square .arrowRight{
+    width: calc(100% / 3);
+    /* position: relative; */
+    z-index: 10;
+}
+
+div.grid .square .arrowRight:hover{
+    color: yellow;
+    transform: scale(2.5);
+    cursor: crosshair;
+}
+
+div.grid .square .arrowUpB{
+    width: 100%;
+    z-index: 10;
+}
+
+div.grid .square .arrowUpB:hover{
+    color: yellow;
+    transform: scale(2.5);
+    cursor: crosshair;
+}
+
+div.grid .square .carB{
+    width: 70%;
+}
+
+div.grid .square .arrowRightB{
+    width: 30%;
+    z-index: 10;
+}
+
+div.grid .square .arrowRightB:hover{
+    color: yellow;
+    transform: scale(2.5);
+    cursor: crosshair;
+}
+
+div.grid .square .arrowDownB{
+    width: 100%;
+    z-index: 10;
+}
+
+div.grid .square .arrowDownB:hover{
+    color: yellow;
+    transform: scale(2.5);
+    cursor: crosshair;
+    /* position: relative; */
+}
+
+
+div.grid .square img{
+    position: absolute;
+    z-index: 0;
+}
+
+.redcar{
+    height: 100%;
+    width: 100%;
+}
+
+.bluecar{
+    height: 70%;
+    width: 90%;
+}
+
+
+
+.box100{
+    width: calc(100%/10);
+    height: calc(100%10);
+}
+
+.box81{
+    width: calc(100%/9);
+    height: calc(100%/9);
+}
+
+.box49{
+    width: calc(100%/7);
+    height: calc(100%/7);
+}
+
+.box10{
+    width: calc(100%/10);
+    height: calc(100%/10);
+    position: relative;
+}
+
+.box5{
+    width: calc(100%/5);
+    height: calc(100%/5);
+    position: relative;
+}
+
+.box3{
+    width: calc(100%/3);
+    height: calc(100%/3);
+    position: relative;
+}
+
+
+/*** UTILITY ***/
+.red{
+    color:red
+}
+
+.blue{
+    color:blue
+}
+
+.flex{
+    display: flex;
+}
+
+.alignItemsCenter{
+    align-items: center;
+}
+
+.justifyContentCenter{
+    justify-content: center;
+}
+
+.gap1{
+    gap: 1rem;
+}

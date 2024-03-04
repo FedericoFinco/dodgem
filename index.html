@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- logo e selezione  -->
+    <header>
+        <div class="containerHead ">
+            <div class="left flex alignItemsCenter gap1">
+                <img src="https://picsum.photos/40" alt="">
+                <h1>DODGEm</h1>
+                <!-- <img src="./img/PngItem_3530748.png" alt=""> -->
+                <!-- <img src="https://media.istockphoto.com/id/970028668/photo/3d-illustration-of-generic-compact-red-suv.jpg?s=612x612&w=0&k=20&c=T7ZhtGZy1WAV-th1xBrJIEU_ENW6PR3zUVWySlZGLEA=" alt=""> -->
+            </div>
+            <div class="turnCounter"></div>
+            <div class="right flex alignItemsCenter gap1">
+                
+                <label for="difficulty"> Scegli il campo:
+                    <select name="difficulty" id="chooseNumber">
+                        <option value="10">10 x 10</option>
+                        <option value="5">5 x 5</option>
+                        <option value="3">3 x 3</option>
+                    </select>
+                </label>
+                <button id="generator">Play</button>
+                <button id="test">test</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="mainGrid" class="flex alignItemsCenter justifyContentCenter">
+            <div class="grid">
+                
+
+            </div>
+        </div>
+        <div class="banner flex">
+            <div class="error">
+                
+            </div>
+            <div class="scoreboard">
+                
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="container">
+
+            <h3>Bum Brum</h3>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
